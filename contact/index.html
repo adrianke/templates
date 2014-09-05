@@ -61,7 +61,7 @@
 				background: url('imgs/cancel.png') no-repeat 5% 50% rgb(180, 204, 173);
 			}
 
-		input[type="submit"] {
+		input[type="submit"], input[type="reset"] {
 			border: none;
 			font-size: 100%;
 			text-transform: lowercase;
@@ -96,7 +96,7 @@
 			<label>Message<br /><textarea name="message" id="message"></textarea></label>
 			<label>What is 2 + 1?<br /><input type="text" name="test" placeholder="To prevent robots..." /></label>
 			<div style="padding: 1em 1.875em 0; /* 30px / 16px */"><input type="submit" value="Send it now" id="send" />
-			<input type="submit" value="Cancel" id="cancel" /></div>
+			<input type="reset" value="Cancel" id="cancel" /></div>
 		</form>
 	</div>
 </body>
