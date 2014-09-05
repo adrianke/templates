@@ -26,3 +26,11 @@ Contact:
 Got an interesting PSD?
 -------------------
 In that case, please send me an [email](https://adrianke.com/contact).
+
+License
+-------
+![CC-BY][https://i.creativecommons.org/l/by/4.0/88x31.png]
+
+This work is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+
+Please note that some of the images used in the design implentations are not mine to give away copyright to. Please don't use these in your designs.
