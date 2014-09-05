@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+<head>
+	<title>Contact form</title>
+	<meta charset="utf-8" />
+	<link href="fonts/segoe.css" type="text/css" rel="stylesheet" />
+	<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			$('input, textarea').focus(function () {
+				$(this).parent().css("background-color", "rgb(79, 172, 54)");
+			});
+
+			$('input, textarea').focusout(function () {
+				$(this).parent().css("background-color", "none");
+			});
+		});
+	</script>
+	<style>
+		html {
+			background: url('imgs/bg.png');
+			color: white;
+			font-family: 'SEGOEUIL', sans-serif;
+		}
+
+		h1 {
+			font-weight: 200;
+			font-size: 3em; /* 48px / 16px */
+			margin: 0 0 0.3em 0.625em; /* 30px / (16px * 3) */
+		}
+
+		label {
+			display: block;
+			width: 100%;
+			padding: 0.4em 1.875em; /* 30px / 16px */
+		}
+
+		input:not([type="submit"]), textarea {
+			width: 83.783783783784%; /* 310px / 370px */
+			border: none;
+			font-size: 0.875em; /* 14px / 16px */
+			color: rgb(145, 211, 127);
+		}
+
+
+		#send {
+			background: url('imgs/send.png') no-repeat 5% 50% rgb(231, 255, 224);
+			padding-left: 44px;
+		}
+
+			#send:hover {
+				background: url('imgs/send.png') no-repeat 5% 50% rgb(180, 204, 173);
+			}
+
+		#cancel {
+			background: url('imgs/cancel.png') no-repeat 5% 50% rgb(231, 255, 224);
+			padding-left: 40px;
+		}
+
+			#cancel:hover {
+				background: url('imgs/cancel.png') no-repeat 5% 50% rgb(180, 204, 173);
+			}
+
+		input[type="submit"] {
+			border: none;
+			font-size: 100%;
+			text-transform: lowercase;
+			height: 2.3125em; /* 37px / 16px */
+			width: 49%;
+			-moz-box-sizing: border-box;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+			margin: 0 0;
+		}
+
+		textarea {
+			height: 6em;
+		}
+
+		#wrapper {
+			background-color: rgb(88, 192, 60);
+			width: 23.125em; /* 370 px / 16px */
+			margin: auto;
+			padding: 1.875em 0; /* 30px / 16px */
+			overflow: hidden;
+		}
+	</style>
+</head>
+<body>
+	<div id="wrapper">
+		<h1>Contact me</h1>
+		<form id="form" method="post" action="sent/" />
+			<label>Name<br /><input type="text" name="name" placeholder="John Doe" /></label>
+			<label>E-mail<br /><input type="text" name="email" placeholder="john@doe.me" /></label>
+			<label>Subject<br /><input type="text" name="subject" placeholder="Something catchy" /></label>
+			<label>Message<br /><textarea name="message" id="message"></textarea></label>
+			<label>What is 2 + 1?<br /><input type="text" name="test" placeholder="To prevent robots..." /></label>
+			<div style="padding: 1em 1.875em 0; /* 30px / 16px */"><input type="submit" value="Send it now" id="send" />
+			<input type="submit" value="Cancel" id="cancel" /></div>
+		</form>
+	</div>
+</body>
+</html>

@@ -1,0 +1,397 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	font-size: 110%;
+}
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+
+.clearfix {
+	display: inline-block;
+}
+
+html[xmlns] .clearfix {
+	display: block;
+}
+
+* html .clearfix {
+	height: 1%;
+}
+
+.logo {
+	display: inline;
+}
+
+	.logo h1:before {
+		content: '\00a0';
+		background-image: url('../imgs/paperplane.png');
+		width: 2.27272727272727em; /* 40px / 17.6px */
+		height: 1.70454545454545em; /* 30px / 17.6px */
+		background-size: 100% 100%;
+		padding: 0 0.4em;
+		font-size: 100%;
+		margin-right: 0.3em;
+	}
+
+	.logo h1 {
+		font-family: 'CubanoRegular';
+		font-size: 120%;
+		color: white;
+		display: inline;
+	}
+
+#wrapper {
+	background-repeat: no-repeat;
+	background-image: url('../imgs/background.jpg');
+	min-height: 35.22727272727273em; /* 620px / 17.6px */
+	margin: 0;
+	background-size: 100% 35.22727272727273em;
+}
+
+
+#header {
+	padding-top: 2.84090909090909em; /* 50px / 17.6px */
+	width: 67.142857142857%; /* 940px / 1400 */
+	margin: 0 auto;
+	display: block;
+}
+
+header menu {
+	float: right;
+	margin: 0;
+}
+
+	header menu ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	}
+
+		header menu li {
+			display: inline;
+			margin: 0 1.875em 0 0;
+			padding: 0;
+		}
+
+		header menu a:link, header menu a:visited {
+			color: white;
+			text-decoration: none;
+			font-family: 'Yanone Kaffeesatz', sans-serif;
+			font-weight: 300;
+		}
+
+		header menu a:active, header menu a:hover, #activeItem {
+			color: rgb(179, 179, 179);
+		}
+
+#headline {
+	margin-top: 9.14772727272727em;
+	height: 21.8em;
+}
+
+	#headline h2 {
+		color: white;
+		font-family: 'Yanone Kaffeesatz', sans-serif;
+		font-weight: 200;
+		text-align: center;
+		font-size: 1.81818181818182em; /* 32px / 17.6px */
+	}
+
+		#headline h2 strong {
+			font-weight: 700;
+			display: block;
+			font-size: 3.75em; /* 66px / 17.6px */
+		}
+	
+	#headline p {
+		text-transform: capitalize;
+		font-size: 1.30681818181818em; /* 23px / 17.6px */
+		text-align: center;
+		margin-top: 4.54545454545455em; /* 80px / 17.6px */
+	}
+
+.button {
+	color: white;
+	text-decoration: none;
+	border: 0.125em solid white;
+	padding: 0.8em 2.5em; 
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	border-radius: 0.25em;
+}
+
+	.button:hover {
+		background-color: rgba(255, 220, 0, 0.2);
+	}
+
+h3 {
+	font-family: "Yanone Kaffeesatz", sans-serif;
+	font-weight: 200;
+	font-size: 340.909090909091%; /* 60px / 17.6px*/
+	color: black;
+	margin: 0.83333333333333em 0; /* 50 / 60px */
+}
+
+	h3 em {
+		font-style: normal;
+		font-weight: 700;
+		text-transform: capitalize;
+	}
+
+h4 {
+	font-size: 1.25em; /* 22px / 17.6px */
+	color: black;
+	font-weight: 400;
+	margin-bottom: 0;
+}
+
+.content {
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-weight: 200;
+	font-size: 1.02272727272727em; /* 18px / 17.6px */
+	color: rgb(119, 119, 119);
+	width: 100%;
+}
+
+.content article {
+	width: 67.142857142857%; /* 940px / 1400 */
+	margin: 0 auto -0.53em;
+}
+	
+	.content article p, .content article h3 {
+		width: 80%;
+	}
+
+	.content article img {
+		display: block;
+		width: 20%;
+		margin: 1.7em;
+	}
+
+.even {
+}
+
+	.even img {
+		float: right;
+	}
+
+.odd {
+	background-color: rgb(250, 250, 250);
+}
+
+	.odd img {
+		float: left;
+	}
+
+section article td {
+	vertical-align: top;
+}
+
+	section article td figure {
+		float: left;
+		width: 20%;
+		margin: 2em 0.5em 5em 0;
+	}
+
+	section article td img {
+		width: 100% !important;
+		margin: 0 !important;
+	}
+
+	section article td p {
+		margin-top: 0.3em;
+	}
+
+.placeholder {
+	width: 9.65909090909091em; /* 170px / 17.6px */
+	height: 9.65909090909091em; /* 170px / 17.6px */
+	background-color: black;
+	-moz-border-radius: 50%; 
+	-webkit-border-radius: 50%; 
+	border-radius: 50%;
+}
+
+blockquote {
+}
+	blockquote .quote {
+		display: inline-block;
+		float: left;
+		width: 15em;
+		margin: 1.5em 1em;
+		background-color: white;
+		border-radius: 0.3em;
+		border: 0.05681818181818em solid rgb(236, 236, 236);
+		padding: 0.5em 1em;
+	}
+
+	blockquote .placeholder {
+		display: inline-block;
+		float: left;
+	}
+
+	blockquote p:before {
+		content: "“ ";
+	}
+
+	blockquote small:before {
+		content: "– ";
+	}
+
+	blockquote small {
+		display: block;
+		color: rgb(127, 151, 201);
+		margin-top: 0.5em;
+	}
+
+	blockquote p:after {
+		content: " ”";
+	}
+
+	blockquote p {
+		display: inline;
+	}
+
+#clients {
+	background-color: white;
+	margin: 2em 0 0;
+	width: 100%;
+ }
+
+ 	#clients div {
+		width: 20%;
+		margin: 0 0.5em;
+		float: left;
+ 	}
+
+ 	#clients img {
+ 		width: 100%;
+ 	}
+
+ .black {
+ 	margin-top: -1em;
+ 	background-color: rgb(17, 17, 17);
+ 	color: white;
+ 	text-align: center;
+ }
+ 	.black h3 {
+ 		color: white;
+ 	}
+
+ 	.black p {
+ 		margin-bottom: 0;
+ 	}
+
+ 	.black .placeholder {
+ 		border: solid white 0.45454545454545em; /* 8px / 17.6px */
+		float: none;
+		margin: 0 0 0 -2em;
+ 	}
+
+ 	.black small {
+ 		display: block;
+ 	}
+
+ 	.black .social {
+ 		margin-left: -3em;
+ 	}
+
+ 		.black .social img {
+ 			width: 0.85227272727273em; /* 15px / 17.6px */
+ 			height: 0.85227272727273em; /* 15px / 17.6px */
+ 			float: left;
+ 			margin: 1em 0.4em;
+			border: 0.15em solid white;
+			-moz-border-radius: 50%; 
+			-webkit-border-radius: 50%; 
+			border-radius: 50%;
+			padding: 0.5em;
+ 		}
+
+ 		 .black .social img:hover {
+			background-color: rgba(255, 255, 255, 0.2);
+ 		 }
+
+	 .black .third {
+	 	width: 33.33333%;
+	 	border: 1em solid rgb(17, 17, 17);
+	 	-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+		float: left;
+	 }
+
+.purpleish {
+	margin-top: -1em;
+	background-color: rgb(118, 144, 197);
+ 	color: white;
+ 	text-align: left;
+}
+
+	.purpleish article {
+		margin-top: 2em;
+	}
+	
+	.purpleish h3, .purpleish small {
+		text-align: left;
+	}
+
+	.purpleish .half {
+	 	width: 50%;
+	 	border: 1em solid rgb(118, 144, 197);
+	 	-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+		float: left;
+	 }
+
+	 .purpleish article table {
+	 	width: 100%;
+	 }
+
+	.purpleish article td figure {
+		margin: 0 0.5em 0 0;
+		width: 0.85227272727273em; /* 15px / 17.6px */
+	}
+
+	.purpleish article td p {
+		font-size: 65%;
+	}
+
+	.purpleish input, .purpleish textarea {
+		display: block;
+		border: 0.05em solid black;
+		font-size: 100%;
+		margin: 0.76704545454546em 0; /* (27px / 17.6px ) / 2 */
+		width: 100%;
+		font-family: 'Yanone Kaffeesatz', sans-serif;
+		font-weight: 300;
+	}
+
+@media (max-width: 965px) {
+	.placeholder {
+		width: 5em;
+		height: 5em;
+	}
+
+	.black .placeholder {
+		border: 0.2em solid white;
+		margin-left: 1em;
+	}
+}
+
+@media (max-width: 895px) {
+	.black .third {
+		width: 100%;
+	}
+
+	.black .placeholder {
+		display: inline-block;
+		float: left;
+	}
+}
